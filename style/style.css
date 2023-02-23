@@ -94,4 +94,57 @@ body {
 .second--slider .second--slider__btn--next {
   top: 45%;
   right: 2%;
+}
+
+.third--slider {
+  margin-top: 10vh;
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+}
+.third--slider__slide {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: absolute;
+  transition: all 0.5s;
+}
+.third--slider__slide img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.third--slider .third--slider__btn--prev {
+  top: 45%;
+  left: 2%;
+}
+.third--slider .third--slider__btn--next {
+  top: 45%;
+  right: 2%;
+}
+.third--slider .third--slider__controllers {
+  bottom: 5px;
+  left: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+  transform: translateX(-50%);
+}
+.third--slider .third--slider__controllers .third--slider__controller {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  background-color: aquamarine;
+}
+.third--slider .third--slider__controllers .third--slider__controller.active {
+  background-color: blue;
+  transform: scale(1.2);
 }/*# sourceMappingURL=style.css.map */

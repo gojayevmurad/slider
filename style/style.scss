@@ -94,9 +94,9 @@ body {
 
   .second--slider__btn--prev {
     top: 45%;
-    left: 2%; 
+    left: 2%;
   }
-  
+
   .second--slider__btn--next {
     top: 45%;
     right: 2%;
@@ -104,3 +104,62 @@ body {
 }
 
 // #endregion second slider
+// #region third slider
+
+.third--slider {
+  margin-top: 10vh;
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+
+  &__slide {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: absolute;
+    transition: all 0.5s;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  .third--slider__btn--prev {
+    top: 45%;
+    left: 2%;
+  }
+
+  .third--slider__btn--next {
+    top: 45%;
+    right: 2%;
+  }
+  .third--slider__controllers {
+    bottom: 5px;
+    left: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    transform: translateX(-50%);
+    .third--slider__controller {
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      border-radius: 50%;
+      background-color: aquamarine;
+
+      &.active {
+        background-color: blue;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+// #endregion thirdslider
